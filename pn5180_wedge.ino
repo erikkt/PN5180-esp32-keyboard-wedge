@@ -4,14 +4,20 @@
 //
 // ESP-32    <--> PN5180 pin mapping:
 // 3.3V      <--> 3.3V
+// 5V      <--> 5V
 // GND       <--> GND
 // SCLK, 18   --> SCLK
 // MISO, 19  <--  MISO
 // MOSI, 23   --> MOSI
-// SS, 16     --> NSS (=Not SS -> active LOW)
+// SS, 2     --> NSS (=Not SS -> active LOW)
 // BUSY, 5   <--  BUSY
-// Reset, 17  --> RST
-//
+// Reset, 4  --> RST
+// button = 27; 
+// buzzer = 25; 
+// redLed = 22;
+// yellowLed = 21;
+// greenLed = 17;
+// buttonLed = 16;
 
 #include <PN5180.h>
 #include <PN5180ISO14443.h>
